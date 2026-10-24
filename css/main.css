@@ -2,12 +2,26 @@
 
 /* Set custom variables here */
 
+:root {
+--bs-green: #2e483a;
+--bs-green-rgb: 46, 72, 58;
+--bs-light: #f6f3ed;
+--bs-light-rgb: 246, 243, 237;
+--bs-dark: var(--dd-green);
+--bs-dark-rgb: var(--bs-green-rgb);
+--bs-primary: var(--bs-green);
+--bs-primary-rgb: var(--bs-green-rgb);
+--bs-body-bg-color: var(--bs-light);
+}
 
-
-
+.btn-primary {
+ --bs-btn-bg: var(--bs-green);
+ --bs-btn-border-color: var(--bs-primary);
+}
 
 .navbar-brand {
   color: #F6F3ED;
+  width: 40px;
 }
 
 body {
@@ -32,7 +46,7 @@ h1, h2, h3 {
 }
 
 #cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
+  background: linear-gradient(rgba(52, 50, 50, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
